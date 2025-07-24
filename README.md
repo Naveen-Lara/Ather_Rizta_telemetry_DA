@@ -44,8 +44,7 @@ The study aims to:
 * Ride mode impact analysis (Zip vs Smart Eco)
 * SOC degradation modeling
 * Battery stress profiling (voltage sag, impedance, temperature)
-* Tyre pressure vs efficiency/regression analysis
-* Trend-based forecasting (without machine learning)
+* Tyre pressure vs efficiency/regression analysis.
 
 ---
 
