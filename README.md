@@ -38,6 +38,9 @@ The study aims to:
 * Jupyter Notebook
 
 ---
+## Data Maodelling:
+<img width="921" height="683" alt="image" src="https://github.com/user-attachments/assets/80413517-96b0-4577-b89c-5d185697c541" />
+
 
 ##  Key Focus Areas
 
