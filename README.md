@@ -33,6 +33,7 @@ The study aims to:
 ##  Tools & Libraries
 
 * Python (Pandas, NumPy)
+* Used Mysql to Create StarSchema
 * Seaborn & Matplotlib (Data Visualization)
 * Jupyter Notebook
 
