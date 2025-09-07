@@ -39,8 +39,7 @@ The study aims to:
 
 ---
 ## Data Maodelling:
-<img width="921" height="683" alt="image" src="https://github.com/user-attachments/assets/80413517-96b0-4577-b89c-5d185697c541" />
-
+<img width="941" height="642" alt="image" src="https://github.com/user-attachments/assets/9a65f4be-c47f-4c82-ae75-b85fdf65c976" />
 
 ##  Key Focus Areas
 
