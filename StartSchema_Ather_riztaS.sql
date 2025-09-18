@@ -61,6 +61,12 @@ CREATE TABLE Rizta_tele (
     FOREIGN KEY (event_time) REFERENCES dim_date(event_time)
 );
 
+--creating index to make queries run faster
+CREATE INDEX idx_event_time ON rizta_tele(event_time);
+CREATE INDEX idx_ridemode ON rizta_tele(ridemode_id);
+CREATE INDEX idx_regen ON rizta_tele(regen_id);
+CREATE INDEX idx_frontpsi ON rizta_tele(front_psi_id);
+CREATE INDEX idx_rearpsi ON rizta_tele(rear_psi_id);
 
 
 
