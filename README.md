@@ -25,8 +25,10 @@ The study aims to:
 ##  Project Contents
 
 * `Ather_Rizta_Realistic_Telemetry_25Days.csv` – Telemetry dataset (180,000+ rows)
-* `ride-analysis.ipynb` – Full EDA, visualizations, and trend modeling notebook
-* `README.md` – This project documentation
+* `Datacleaning_ather_riztaV2.ipynb` – Fulldatcleaing and Feature Enchancement nbotebook.
+* `StartSchema_Ather_riztaS.sql` - Sql scripts on Star Schema data modelling
+* `Ather Rizta S Scooter performance Analysis.sql` - Queries for creating dataset for Superset BI.
+* `README.md` – Project documentation
 
 ---
 
