@@ -3,8 +3,8 @@ Use  ather_rizta_s;
 
 create table dim_psi(
 	psi_id   INT Primary KEY,
-    recommended_Front_PSI  float,
-    recommended_Rear_PSI  float
+   	recommended_psi FLOAT,
+    psi_description VARCHAR(50)
     );
     
 create table dim_ridemode(
@@ -19,17 +19,29 @@ create table dim_regenstatus(
     regen_status Varchar(50)
 );
 
+drop table if exists day_rideid;
+CREATE TABLE day_rideid (
+    day_id INT PRIMARY KEY,
+    day_id_ride VARCHAR(50)
+);
+
+
 drop table if exists dim_date;
-Create table dim_date(
-	timestamp datetime primary Key
-    );
+CREATE TABLE dim_date (
+    event_time DATETIME PRIMARY KEY,
+    day_id INT,
+    FOREIGN KEY (day_id) REFERENCES day_rideid(day_id)
+);
+
+
 Drop table if exists Rizta_tele;
 CREATE TABLE Rizta_tele (
-    ride_id INT PRIMARY KEY ,
-    timestamp datetime,
-    psi_id INT,
-    front_psi Float,
-     Rear_psi float,
+  	RID VARCHAR(50) PRIMARY KEY,
+    event_time DATETIME,
+    front_psi_id INT,
+    front_psi FLOAT,
+    Rear_psi_id INT,
+    Rear_psi FLOAT,
     ridemode_id INT,
     regen_id INT,
     motor_current FLOAT,
@@ -42,10 +54,11 @@ CREATE TABLE Rizta_tele (
     estimated_soc FLOAT,
     estimated_range_km FLOAT,
     acceleration FLOAT,
-    FOREIGN KEY (timestamp) REFERENCES dim_date(timestamp),
-    FOREIGN KEY (psi_id) REFERENCES dim_psi(psi_id),
+    FOREIGN KEY (front_psi_id) REFERENCES dim_psi(psi_id),
+    FOREIGN KEY (Rear_psi_id) REFERENCES dim_psi(psi_id),
     FOREIGN KEY (ridemode_id) REFERENCES dim_ridemode(ridemode_id),
-    FOREIGN KEY (regen_id) REFERENCES dim_regenstatus(regen_id)
+    FOREIGN KEY (regen_id) REFERENCES dim_regenstatus(regen_id),
+    FOREIGN KEY (event_time) REFERENCES dim_date(event_time)
 );
 
 
