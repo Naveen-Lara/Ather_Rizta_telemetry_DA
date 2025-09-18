@@ -36,7 +36,7 @@ The study aims to:
 
 * Python (Pandas, NumPy)
 * Used Mysql to Create StarSchema
-* Seaborn & Matplotlib (Data Visualization)
+* Apache Superset for interactive Vizualisation.
 * Jupyter Notebook
 
 ---
